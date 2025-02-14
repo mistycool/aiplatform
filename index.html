@@ -3,31 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Platform</title>
+  <title>Runway ML Clone</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>AI Platform</h1>
-    <div class="form-container">
-      <h2>Text-to-Video</h2>
-      <form id="text-to-video-form">
-        <input type="text" id="text-input" placeholder="Enter text..." required>
-        <button type="submit">Generate Video</button>
-      </form>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unleash Your Creativity</h1>
+      <p>Create stunning AI-powered content with Runway ML.</p>
+      <a href="#features" class="btn">Explore Features</a>
     </div>
-    <div class="form-container">
-      <h2>Image-to-Video</h2>
-      <form id="image-to-video-form">
-        <input type="file" id="image-input" accept="image/*" required>
-        <button type="submit">Generate Video</button>
-      </form>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="assets/images/feature-1.jpg" alt="Feature 1">
+        <h3>AI-Powered Tools</h3>
+        <p>Generate images, videos, and more with cutting-edge AI.</p>
+      </div>
+      <div class="feature-card">
+        <img src="assets/images/feature-2.jpg" alt="Feature 2">
+        <h3>Real-Time Collaboration</h3>
+        <p>Work with your team in real-time from anywhere.</p>
+      </div>
+      <div class="feature-card">
+        <img src="assets/images/feature-3.jpg" alt="Feature 3">
+        <h3>Easy Integration</h3>
+        <p>Seamlessly integrate with your favorite tools.</p>
+      </div>
     </div>
-    <div id="video-container">
-      <h2>Generated Video</h2>
-      <video id="generated-video" controls></video>
-    </div>
-  </div>
+  </section>
+
+  <!-- Video Demo Section -->
+  <section class="video-demo">
+    <h2>See It in Action</h2>
+    <video controls>
+      <source src="assets/videos/demo-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Runway ML Clone. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
