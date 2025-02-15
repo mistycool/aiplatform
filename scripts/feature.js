@@ -32,3 +32,27 @@ function changeBackground(background) {
                                   background === 'forest' ? '#228B22' : 'transparent';
   }
 }
+// Handle Convert to Speech Button
+document.getElementById('speak-button').addEventListener('click', function () {
+  const text = document.getElementById('text-input').value;
+  const audioOutput = document.getElementById('audio-output');
+
+  if (text.trim() === '') {
+    alert('Please enter some text.');
+    return;
+  }
+
+  // Use the Web Speech API to convert text to speech
+  const synth = window.speechSynthesis;
+  const utterance = new SpeechSynthesisUtterance(text);
+
+  // Set voice and language (optional)
+  utterance.lang = 'en-US'; // Default to English (US)
+  utterance.voice = synth.getVoices().find(voice => voice.lang === 'en-US');
+
+  // Play the speech
+  synth.speak(utterance);
+
+  // Display the audio controls (optional)
+  audioOutput.style.display = 'block';
+});
