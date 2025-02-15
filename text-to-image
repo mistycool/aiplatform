@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/feature.css">
 </head>
 <body>
-  <!-- Sliding Menu (Left Side) -->
+  <!-- Sliding Menu -->
   <div class="menu">
     <div class="menu-icon">☰</div>
     <div class="menu-content">
