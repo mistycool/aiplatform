@@ -56,3 +56,22 @@ document.getElementById('speak-button').addEventListener('click', function () {
   // Display the audio controls (optional)
   audioOutput.style.display = 'block';
 });
+// Handle Generate Image Button
+document.getElementById('generate-button').addEventListener('click', function () {
+  const text = document.getElementById('text-input').value;
+  const output = document.getElementById('output');
+
+  if (text.trim() === '') {
+    alert('Please enter some text.');
+    return;
+  }
+
+  // Placeholder for image generation logic
+  output.innerHTML = <p>Generating image for: "${text}"...</p>;
+  setTimeout(() => {
+    output.innerHTML = `
+      <p>Image generation is not implemented yet. This is a placeholder.</p>
+      <img src="https://via.placeholder.com/500x300?text=Generated+Image" alt="Generated Image">
+    `;
+  }, 2000);
+});
