@@ -39,21 +39,12 @@ body, html {
   margin: 10px 0;
 }
 
-/* User Authorization (Right Side) */
+/* User Authentication (Right Side) */
 .auth-form {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
   z-index: 100; /* Ensure auth form is above other content */
-}
-.auth-form input {
-  display: block;
-  margin: 10px 0;
-  padding: 10px;
-  width: 100%;
 }
 .auth-form button {
   padding: 10px 20px;
@@ -61,6 +52,11 @@ body, html {
   color: white;
   border: none;
   cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+.auth-form button:hover {
+  background: #0056b3;
 }
 
 /* Feature Content */
