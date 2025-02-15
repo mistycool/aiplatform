@@ -9,7 +9,7 @@
 <body>
   <!-- Sliding Menu (Left Side) -->
   <div class="menu">
-    <div class="menu-icon" onmouseover="openMenu()">☰</div>
+    <div class="menu-icon">☰</div>
     <div class="menu-content">
       <a href="remove-background.html">Remove Background</a>
       <a href="change-background.html">Change Background</a>
