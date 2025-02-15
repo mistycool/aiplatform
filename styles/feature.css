@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  color: white;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  transition: right 0.3s;
+}
+.menu:hover {
+  right: 0;
+}
+.menu-icon {
+  position: absolute;
+  left: -50px;
+  top: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.menu-content {
+  padding: 20px;
+}
+.menu-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+.feature-content {
+  padding: 20px;
+  margin-top: 100px;
+  text-align: center;
+}
+.upload-section {
+  margin-top: 20px;
+}
+.upload-section input {
+  display: none;
+}
+.upload-section label {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.output-section {
+  margin-top: 20px;
+}
+#output {
+  margin-top: 10px;
+}
