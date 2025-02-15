@@ -6,39 +6,15 @@ body, html {
   background: #1a1a1a;
   color: white;
 }
-.menu {
-  position: fixed;
-  top: 0;
-  right: -250px;
-  width: 250px;
-  height: 100%;
-  background: #333;
-  transition: right 0.3s;
-}
-.menu:hover {
-  right: 0;
-}
-.menu-icon {
-  position: absolute;
-  left: -50px;
-  top: 20px;
-  font-size: 2rem;
-  cursor: pointer;
-}
-.menu-content {
-  padding: 20px;
-}
-.menu-content a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  margin: 10px 0;
-}
+
+/* Feature Content */
 .feature-content {
   padding: 20px;
   margin-top: 100px;
   text-align: center;
 }
+
+/* Upload Section */
 .upload-section {
   margin-top: 20px;
 }
@@ -52,13 +28,17 @@ body, html {
   cursor: pointer;
   border-radius: 5px;
 }
+
+/* Output Section */
 .output-section {
   margin-top: 20px;
 }
 #output {
   margin-top: 10px;
 }
-background-options {
+
+/* Background Options */
+.background-options {
   margin-top: 20px;
 }
 .background-options h2 {
@@ -79,5 +59,3 @@ background-options {
 .background-options button:hover {
   background: #0056b3;
 }
-Sent
-
