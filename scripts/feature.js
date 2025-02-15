@@ -21,3 +21,13 @@ document.getElementById('file-upload').addEventListener('change', function (even
     }
   }
 });
+// Change background
+function changeBackground(background) {
+  const output = document.getElementById('output');
+  const media = output.querySelector('img, video');
+  if (media) {
+    media.style.backgroundColor = background === 'beach' ? '#87CEEB' :
+                                  background === 'city' ? '#A9A9A9' :
+                                  background === 'forest' ? '#228B22' : 'transparent';
+  }
+}
