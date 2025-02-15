@@ -6,6 +6,8 @@ body, html {
   background: #1a1a1a;
   color: white;
 }
+
+/* Sliding Menu (Right Side) */
 .menu {
   position: fixed;
   top: 0;
@@ -34,10 +36,12 @@ body, html {
   text-decoration: none;
   margin: 10px 0;
 }
+
+/* User Authorization (Left Side) */
 .auth-form {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 20px;
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
@@ -55,6 +59,8 @@ body, html {
   border: none;
   cursor: pointer;
 }
+
+/* Feature Content */
 .feature-content {
   padding: 20px;
   margin-top: 100px;
