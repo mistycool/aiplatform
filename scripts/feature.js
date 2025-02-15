@@ -32,6 +32,7 @@ function changeBackground(background) {
                                   background === 'forest' ? '#228B22' : 'transparent';
   }
 }
+
 // Handle Convert to Speech Button
 document.getElementById('speak-button').addEventListener('click', function () {
   const text = document.getElementById('text-input').value;
@@ -56,6 +57,7 @@ document.getElementById('speak-button').addEventListener('click', function () {
   // Display the audio controls (optional)
   audioOutput.style.display = 'block';
 });
+
 // Handle Generate Image Button
 document.getElementById('generate-button').addEventListener('click', function () {
   const text = document.getElementById('text-input').value;
@@ -75,3 +77,23 @@ document.getElementById('generate-button').addEventListener('click', function ()
     `;
   }, 2000);
 });
+
+// Add Download Button for Output
+function addDownloadButton(output, fileUrl, fileName) {
+  const downloadButton = document.createElement('button');
+  downloadButton.innerText = 'Download';
+  downloadButton.style.marginTop = '10px';
+  downloadButton.style.padding = '10px 20px';
+  downloadButton.style.background = '#007bff';
+  downloadButton.style.color = 'white';
+  downloadButton.style.border = 'none';
+  downloadButton.style.borderRadius = '5px';
+  downloadButton.style.cursor = 'pointer';
+  downloadButton.addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    link.click();
+  });
+  output.appendChild(downloadButton);
+}
