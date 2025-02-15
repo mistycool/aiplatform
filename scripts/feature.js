@@ -67,7 +67,7 @@ document.getElementById('generate-button').addEventListener('click', function ()
   }
 
   // Placeholder for image generation logic
-  output.innerHTML = <p>Generating image for: "${text}"...</p>;
+  output.innerHTML = `<p>Generating image for: "${text}"...</p>`;
   setTimeout(() => {
     output.innerHTML = `
       <p>Image generation is not implemented yet. This is a placeholder.</p>
