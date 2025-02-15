@@ -1,23 +1,3 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background: #1a1a1a;
-  color: white;
-}
-
-/* Video Background */
-.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  object-fit: cover;
-}
-
 /* Sliding Menu (Left Side) */
 .menu {
   position: fixed;
@@ -30,22 +10,18 @@ body, html {
   z-index: 1000; /* Ensure menu is above other content */
 }
 
-.menu:hover {
-  left: 0; /* Slide in on hover */
+.menu.open {
+  left: 0; /* Slide in when open */
 }
 
 .menu-icon {
-  position: absolute;
-  right: -50px; /* Position icon outside the menu */
+  position: fixed;
+  left: 20px;
   top: 20px;
   font-size: 2rem;
   cursor: pointer;
   color: white;
-  transition: color 0.3s ease-in-out; /* Smooth color transition */
-}
-
-.menu-icon:hover {
-  color: #007bff; /* Change icon color on hover */
+  z-index: 1001; /* Ensure icon is above the menu */
 }
 
 .menu-content {
@@ -62,107 +38,4 @@ body, html {
 
 .menu-content a:hover {
   color: #007bff; /* Change link color on hover */
-}
-
-/* User Authentication (Right Side) */
-.auth-form {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 100; /* Ensure auth form is above other content */
-}
-
-.auth-form button {
-  padding: 10px 20px;
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin: 5px;
-  border-radius: 5px;
-}
-
-.auth-form button:hover {
-  background: #0056b3;
-}
-
-/* Feature Content */
-.feature-content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  margin-top: 100px;
-  text-align: center;
-  color: white;
-}
-
-/* User Desires Section */
-.user-desires {
-  margin-top: 30px;
-}
-
-.user-desires textarea {
-  width: 80%;
-  height: 100px;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.user-desires button {
-  padding: 10px 20px;
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 10px;
-  border-radius: 5px;
-}
-
-.user-desires button:hover {
-  background: #0056b3;
-}
-
-/* Plans Section */
-.plans-section {
-  margin-top: 50px;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  color: white;
-  text-align: center;
-}
-
-.plans {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.plan {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  width: 20%;
-}
-
-.plan h3 {
-  margin-bottom: 10px;
-}
-
-.plan p {
-  margin: 10px 0;
-}
-
-.plan button {
-  padding: 10px 20px;
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.plan button:hover {
-  background: #0056b3;
 }
