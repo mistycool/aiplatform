@@ -58,3 +58,26 @@ body, html {
 #output {
   margin-top: 10px;
 }
+background-options {
+  margin-top: 20px;
+}
+.background-options h2 {
+  margin-bottom: 10px;
+}
+.background-options .options {
+  display: flex;
+  gap: 10px;
+}
+.background-options button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.background-options button:hover {
+  background: #0056b3;
+}
+Sent
+
