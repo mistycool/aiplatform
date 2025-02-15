@@ -9,7 +9,7 @@
 <body>
   <!-- Sliding Menu -->
   <div class="menu">
-    <div class="menu-icon" onmouseover="openMenu()">☰</div>
+    <div class="menu-icon">☰</div>
     <div class="menu-content">
       <a href="remove-background.html">Remove Background</a>
       <a href="change-background.html">Change Background</a>
@@ -29,10 +29,14 @@
   <div class="feature-content">
     <h1>Change Background</h1>
     <p>Upload a photo or video and choose a new background.</p>
+
+    <!-- Upload Section -->
     <div class="upload-section">
       <input type="file" id="file-upload" accept="image/*, video/*">
       <label for="file-upload">Upload File</label>
     </div>
+
+    <!-- Background Options -->
     <div class="background-options">
       <h2>Choose a Background</h2>
       <div class="options">
@@ -41,6 +45,8 @@
         <button onclick="changeBackground('forest')">Forest</button>
       </div>
     </div>
+
+    <!-- Output Section -->
     <div class="output-section">
       <h2>Output</h2>
       <div id="output"></div>
