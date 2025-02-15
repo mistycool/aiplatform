@@ -12,6 +12,7 @@
     <source src="assets/stars-sky.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
   <!-- Sliding Menu (Left Side) -->
   <div class="menu">
     <div class="menu-icon" onmouseover="openMenu()">☰</div>
@@ -31,15 +32,53 @@
   </div>
 
   <!-- User Authentication (Right Side) -->
-<div class="auth-form">
-  <button onclick="window.location.href='login.html'">Sign In</button>
-  <button onclick="window.location.href='signup.html'">Sign Up</button>
-</div>
+  <div class="auth-form">
+    <button onclick="window.location.href='login.html'">Sign In</button>
+    <button onclick="window.location.href='signup.html'">Sign Up</button>
+  </div>
 
   <!-- Feature Content Placeholder -->
   <div class="feature-content">
     <h1>Welcome to AI VIDEO PRO</h1>
     <p>Select a feature from the menu to get started.</p>
+
+    <!-- User Desires Section -->
+    <div class="user-desires">
+      <h2>Share Your Desires</h2>
+      <textarea placeholder="Describe your dream project..."></textarea>
+      <button>Submit</button>
+    </div>
+  </div>
+
+  <!-- Plans Section -->
+  <div class="plans-section">
+    <h2>Our Plans</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <p>Basic features</p>
+        <p>Limited usage</p>
+        <button>Get Started</button>
+      </div>
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>More features</p>
+        <p>Moderate usage</p>
+        <button>Subscribe</button>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <p>Advanced features</p>
+        <p>High usage</p>
+        <button>Subscribe</button>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p>All features</p>
+        <p>Unlimited usage</p>
+        <button>Contact Us</button>
+      </div>
+    </div>
   </div>
 
   <script src="scripts/main.js"></script>
