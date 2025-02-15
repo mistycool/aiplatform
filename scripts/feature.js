@@ -1,4 +1,4 @@
-// Handle file upload
+// Handle file upload for both Remove Background and Change Background
 document.getElementById('file-upload').addEventListener('change', function (event) {
   const file = event.target.files[0];
   if (file) {
@@ -21,7 +21,8 @@ document.getElementById('file-upload').addEventListener('change', function (even
     }
   }
 });
-// Change background
+
+// Change background functionality
 function changeBackground(background) {
   const output = document.getElementById('output');
   const media = output.querySelector('img, video');
