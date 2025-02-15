@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subtitle on Video - AI VIDEO PRO</title>
+  <link rel="stylesheet" href="styles/feature.css">
+</head>
+<body>
+  <!-- Sliding Menu -->
+  <div class="menu">
+    <div class="menu-icon">☰</div>
+    <div class="menu-content">
+      <a href="remove-background.html">Remove Background</a>
+      <a href="change-background.html">Change Background</a>
+      <a href="text-to-video.html">Video Generating from Text</a>
+      <a href="text-to-speech.html">Text to Speech</a>
+      <a href="text-to-image.html">Text to Image</a>
+      <a href="subtitle-video.html">Subtitle on Video</a>
+      <a href="video-simulation.html">Video Simulation</a>
+      <a href="image-to-cartoon.html">Image to Cartoon/Anime/3D</a>
+      <a href="image-to-video.html">Image to Video</a>
+      <a href="user-suggestions.html">User Suggestions</a>
+      <a href="lottery.html">Lottery</a>
+    </div>
+  </div>
+
+  <!-- Feature Content -->
+  <div class="feature-content">
+    <h1>Subtitle on Video</h1>
+    <p>Upload a video and add subtitles.</p>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+      <input type="file" id="file-upload" accept="video/*">
+      <label for="file-upload">Upload Video</label>
+    </div>
+
+    <!-- Subtitle Input Section -->
+    <div class="text-input">
+      <textarea id="subtitle-input" placeholder="Enter subtitles here..."></textarea>
+      <button id="add-subtitle-button">Add Subtitles</button>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section">
+      <h2>Output</h2>
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <script src="scripts/feature.js"></script>
+</body>
+</html>
