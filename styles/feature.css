@@ -59,3 +59,34 @@ body, html {
 .background-options button:hover {
   background: #0056b3;
 }
+/* Sliding Menu (Left Side) */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  transition: left 0.3s;
+  z-index: 1000; /* Ensure menu is above other content */
+}
+.menu:hover {
+  left: 0; /* Slide in on hover */
+}
+.menu-icon {
+  position: absolute;
+  right: -50px; /* Position icon outside the menu */
+  top: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+.menu-content {
+  padding: 20px;
+}
+.menu-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
