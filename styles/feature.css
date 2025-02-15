@@ -90,3 +90,35 @@ body, html {
   text-decoration: none;
   margin: 10px 0;
 }
+/* Text Input Section */
+.text-input {
+  margin-top: 20px;
+}
+.text-input textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.text-input button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.text-input button:hover {
+  background: #0056b3;
+}
+
+/* Output Section */
+.output-section {
+  margin-top: 20px;
+}
+#audio-output {
+  margin-top: 10px;
+}
