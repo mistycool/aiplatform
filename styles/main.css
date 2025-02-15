@@ -7,25 +7,27 @@ body, html {
   color: white;
 }
 
-/* Sliding Menu (Right Side) */
+/* Sliding Menu (Left Side) */
 .menu {
   position: fixed;
   top: 0;
-  right: -250px;
+  left: -250px; /* Hidden by default */
   width: 250px;
   height: 100%;
   background: #333;
-  transition: right 0.3s;
+  transition: left 0.3s;
+  z-index: 1000; /* Ensure menu is above other content */
 }
 .menu:hover {
-  right: 0;
+  left: 0; /* Slide in on hover */
 }
 .menu-icon {
   position: absolute;
-  left: -50px;
+  right: -50px; /* Position icon outside the menu */
   top: 20px;
   font-size: 2rem;
   cursor: pointer;
+  color: white;
 }
 .menu-content {
   padding: 20px;
@@ -37,14 +39,15 @@ body, html {
   margin: 10px 0;
 }
 
-/* User Authorization (Left Side) */
+/* User Authorization (Right Side) */
 .auth-form {
   position: fixed;
   top: 20px;
-  left: 20px;
+  right: 20px;
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
+  z-index: 100; /* Ensure auth form is above other content */
 }
 .auth-form input {
   display: block;
