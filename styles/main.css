@@ -76,6 +76,9 @@ body, html {
   top: 20px;
   right: 20px;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add spacing between buttons */
 }
 
 .auth-form button {
@@ -90,6 +93,19 @@ body, html {
 
 .auth-form button:hover {
   background: #0056b3;
+}
+
+/* Style the dropdown */
+#language-dropdown {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position it below the language button */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  z-index: 1000; /* Ensure it appears above other elements */
+  min-width: 120px; /* Set a minimum width */
 }
 
 /* Feature Content */
@@ -171,24 +187,4 @@ body, html {
 
 .plan button:hover {
   background: #0056b3;
-}
-/* Position the language button and dropdown container */
-.auth-form {
-    position: relative; /* Ensure the dropdown is positioned relative to this container */
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Add spacing between buttons */
-}
-
-/* Style the dropdown */
-#language-dropdown {
-    display: none; /* Hidden by default */
-    position: absolute; /* Position it relative to the auth-form container */
-    top: 100%; /* Position it below the language button */
-    left: 0;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 5px;
-    z-index: 1000; /* Ensure it appears above other elements */
-    min-width: 120px; /* Set a minimum width */
 }
