@@ -35,53 +35,62 @@
   <div class="auth-form">
     <button onclick="window.location.href='login.html'">Sign In</button>
     <button onclick="window.location.href='signup.html'">Sign Up</button>
+    <!-- Language Button and Dropdown -->
+    <button id="language-button">🌐 Language</button>
+    <select id="language-dropdown" style="display: none;">
+      <option value="en">English</option>
+      <option value="ar">Arabic</option>
+      <option value="sl">Slovenian</option>
+      <option value="de">German</option>
+    </select>
   </div>
 
   <!-- Feature Content Placeholder -->
   <div class="feature-content">
-    <h1>Welcome to AI VIDEO PRO</h1>
-    <p>Select a feature from the menu to get started.</p>
+    <h1 data-translate="welcome">Welcome to AI VIDEO PRO</h1>
+    <p data-translate="select-feature">Select a feature from the menu to get started.</p>
 
     <!-- User Desires Section -->
     <div class="user-desires">
-      <h2>Share Your Desires</h2>
-      <textarea placeholder="Describe your dream project..."></textarea>
-      <button>Submit</button>
+      <h2 data-translate="share-desires">Share Your Desires</h2>
+      <textarea placeholder="Describe your dream project..." data-translate="textarea-placeholder"></textarea>
+      <button data-translate="submit-button">Submit</button>
     </div>
   </div>
 
   <!-- Plans Section -->
   <div class="plans-section">
-    <h2>Our Plans</h2>
+    <h2 data-translate="our-plans">Our Plans</h2>
     <div class="plans">
       <div class="plan">
-        <h3>Free</h3>
-        <p>Basic features</p>
-        <p>Limited usage</p>
-        <button>Get Started</button>
+        <h3 data-translate="free-plan">Free</h3>
+        <p data-translate="free-features">Basic features</p>
+        <p data-translate="free-usage">Limited usage</p>
+        <button data-translate="get-started">Get Started</button>
       </div>
       <div class="plan">
-        <h3>Basic</h3>
-        <p>More features</p>
-        <p>Moderate usage</p>
-        <button>Subscribe</button>
+        <h3 data-translate="basic-plan">Basic</h3>
+        <p data-translate="basic-features">More features</p>
+        <p data-translate="basic-usage">Moderate usage</p>
+        <button data-translate="subscribe">Subscribe</button>
       </div>
       <div class="plan">
-        <h3>Pro</h3>
-        <p>Advanced features</p>
-        <p>High usage</p>
-        <button>Subscribe</button>
+        <h3 data-translate="pro-plan">Pro</h3>
+        <p data-translate="pro-features">Advanced features</p>
+        <p data-translate="pro-usage">High usage</p>
+        <button data-translate="subscribe">Subscribe</button>
       </div>
       <div class="plan">
-        <h3>Enterprise</h3>
-        <p>All features</p>
-        <p>Unlimited usage</p>
-        <button>Contact Us</button>
+        <h3 data-translate="enterprise-plan">Enterprise</h3>
+        <p data-translate="enterprise-features">All features</p>
+        <p data-translate="enterprise-usage">Unlimited usage</p>
+        <button data-translate="contact-us">Contact Us</button>
       </div>
     </div>
   </div>
 
   <script src="scripts/menu.js"></script>
   <script src="scripts/feature.js"></script>
+  <script src="scripts/language.js"></script>
 </body>
 </html>
