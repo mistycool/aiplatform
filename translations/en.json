@@ -1,0 +1,23 @@
+{
+  "welcome": "Welcome to AI VIDEO PRO",
+  "select-feature": "Select a feature from the menu to get started.",
+  "share-desires": "Share Your Desires",
+  "textarea-placeholder": "Describe your dream project...",
+  "submit-button": "Submit",
+  "our-plans": "Our Plans",
+  "free-plan": "Free",
+  "free-features": "Basic features",
+  "free-usage": "Limited usage",
+  "get-started": "Get Started",
+  "basic-plan": "Basic",
+  "basic-features": "More features",
+  "basic-usage": "Moderate usage",
+  "pro-plan": "Pro",
+  "pro-features": "Advanced features",
+  "pro-usage": "High usage",
+  "enterprise-plan": "Enterprise",
+  "enterprise-features": "All features",
+  "enterprise-usage": "Unlimited usage",
+  "subscribe": "Subscribe",
+  "contact-us": "Contact Us"
+}
