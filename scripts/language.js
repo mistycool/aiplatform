@@ -1,4 +1,4 @@
-Is this full ipdated language js file ?? // Function to set the selected language
+// Function to set the selected language
 function setLanguage(languageCode) {
     const dropdown = document.getElementById('language-dropdown');
     dropdown.value = languageCode; // Update dropdown selection
